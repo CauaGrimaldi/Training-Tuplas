@@ -14,3 +14,12 @@ for pos in range(0,len(listagem)):
     else:
         print(f'R${listagem[pos]:>5.2f}') 
 print('-'*40)
+
+palavras=('aprender','programar','carreira','continuar',
+          'acreditar','pensar','estudar','prosseguir',
+          'lutar','pensamento','esforço','amizade')
+for p in palavras:
+    print(f'\nNa palavra {p.upper()} nós temos',end='')
+    for letra in p:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
