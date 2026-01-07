@@ -28,3 +28,25 @@ for p in princ:
     if p[1]==men:
         print(f'{p[0]} ', end='')
 print()
+
+núm=[[],[]]
+valor=0
+for c in range(1,8):
+    valor=int(input(f'Digite o {c}º valor: '))
+    if valor%2==0:
+        núm[0].append(valor)
+    else:
+        núm[1].append(valor)
+print('-='*30)
+print(f'Os valores pares digitados foram: {núm[0]}. ')
+print(f'Os valores ímpares digitados foram: {núm[1]}.')
+
+matriz=[[0,0,0],[0,0,0],[0,0,0]]
+for l in range(0,3):
+    for c in range(0,3):
+        matriz[l][c]=int(input(f'Digite um valor para [{l}, {c}]: '))
+print('-='*30)
+for l in range(0,3):
+    for c in range(0,3):
+        print(f'[{matriz[l][c]:^5}]', end='')
+    print()
